@@ -9,8 +9,8 @@
 
 <script>
 export default {
-  name: 'Arrow',
-}
+  name: "Arrow",
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -49,7 +49,7 @@ export default {
 .capture-mouse
   display block
   position absolute
-  padding 35px 150px
+  padding 35px 200px
   left 50%
   bottom 50%
   transform translate(-50%, 80%)
