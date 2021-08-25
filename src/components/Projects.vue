@@ -2,16 +2,16 @@
   div
     h1 Projects
 
-    .projects
-      .cell.img
+    section
+      .img
         img(
           src="/img/tracker.png"
           alt="Project Showcase"
         )
-      .cell.description
+      .description
         h2
           Link(href="https://tracker.zaxu.xyz") KH Rando Tracker
-        p A web-based tracker using #[strong Vue.js] and #[strong TypeScript] for popular "randomiser" mods for the Kingdom Hearts series video games, #[strong used by thousands of people around the world].
+        p A web-based tracker using #[strong Vue.js] and #[strong TypeScript] for "randomiser" mods for the Kingdom Hearts series video games, #[strong used by thousands of people around the world].
         p Features a "Co-op" mode, synchronising clients using #[strong WebSockets] powered by a #[strong Python] server.
         p Integrates with the #[Link(href="https://obsproject.com/") Open Broadcaster Software (OBS)] to embed a transparent overlay, which can be remotely controlled from a client through WebSockets.
         //- p Helps people keep track of their progress with the items they've obtained and worlds they've visited/completed.
@@ -20,6 +20,18 @@
         p Supports mobile, allowing Twitch streamers to use their phone to control the on-stream tracker without unfocusing the game on their desktop.
         
         a.github(href="https://github.com/zaxutic/kh-rando-tracker") Source Code
+
+    section
+      .img
+        img(
+          src="/img/colours.png"
+          alt="Project Showcase"
+        )
+      .description
+        h2
+          Link(href="https://colours.zaxu.xyz") Twitch Colours
+        
+        a.github(href="https://github.com/zaxutic/colours") Source Code
 </template>
 
 <script>
@@ -34,9 +46,24 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.projects
+section
   display grid
   grid-template-columns repeat(2, minmax(0, 1fr))
+
+  .img
+    grid-column 1
+    grid-row 1
+
+  .description
+    grid-column 2
+
+  &:nth-child(odd)
+    .img
+      grid-column 2
+      grid-row 1
+
+    .description
+      grid-column 1
 
 a
   text-decoration none
@@ -64,7 +91,6 @@ a
       width 1.5em
       height 1.5em
       background-image url('/img/github.svg')
-      background-size cover
       filter invert(1)
 
 h2
@@ -73,48 +99,53 @@ h2
   font-weight 400
   color $link-color
 
-.cell
+.img
+.description
   display flex
   flex-direction column
   justify-content center
-  gap 10px
   margin 25px
+
+.description
+  gap 10px
   text-align center
 
   p
     margin 0
 
-  &.img
-    position relative
-    border-radius 4px
-    box-shadow 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-      0 10px 10px -5px rgba(0, 0, 0, 0.04)
-    overflow hidden
+.img
+  position relative
+  border-radius 4px
+  box-shadow 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04)
+  overflow hidden
+
+  &::after
+    content 'Visit Website'
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    display flex
+    align-items center
+    justify-content center
+    font-weight 600
+    background rgba(0, 0, 0, .8)
+    cursor pointer
+    opacity 0
+    transition opacity .35s
+
+  &:hover
+    img
+      transform scale(1.1)
 
     &::after
-      content 'Visit Website'
-      position absolute
-      top 0
-      right 0
-      bottom 0
-      left 0
-      display flex
-      align-items center
-      justify-content center
-      font-weight 600
-      background rgba(0, 0, 0, .8)
-      cursor pointer
-      opacity 0
-      transition opacity .35s
-
-    &:hover
-      img
-        transform scale(1.1)
-
-      &::after
-        opacity 1
+      opacity 1
 
 img
+  height 100%
   width 100%
+  object-fit cover
   transition transform .35s
 </style>
