@@ -5,6 +5,8 @@
   .container
     transition(name="fade-down" appear)
       h1 Michael
+        |
+        |
         span Vo
     .flex
       transition(name="zoom" appear)
