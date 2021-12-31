@@ -3,7 +3,7 @@ div(style="line-height: 0")
   .outer-container
     .capture-mouse(v-scroll-to=`{
       el: '.main',
-      duration: 750,
+      duration: 1000,
     }`)
     .container
       .arrow
