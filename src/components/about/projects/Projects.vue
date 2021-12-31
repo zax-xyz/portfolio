@@ -56,8 +56,8 @@ section
   display grid
   grid-template-columns repeat(2, minmax(0, 1fr))
   opacity 0
-  transform translateX(-50%)
-  transition opacity .75s, transform .75s
+  transform translateX(-150px)
+  transition opacity 1s, transform .75s
 
   .img
     grid-column 1
@@ -67,7 +67,7 @@ section
     grid-column 2
 
   &:nth-child(even)
-    transform translateX(50%)
+    transform translateX(150px)
 
     .img
       grid-column 2

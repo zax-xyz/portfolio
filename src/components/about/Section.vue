@@ -45,15 +45,15 @@ export default {
 h1
 .content.animate
   opacity 0
-  transition opacity .75s, transform .75s
+  transition opacity 1s, transform .75s
 
   &.visible
     opacity 1
     transform none
 
 h1
-  transform translateX(50%)
+  transform translateX(-150px)
 
 .content.animate
-  transform translateX(-50%)
+  transform translateX(150px)
 </style>
