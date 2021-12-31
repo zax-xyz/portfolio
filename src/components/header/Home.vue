@@ -18,11 +18,9 @@
           |
           | Major
       transition(name="slide-right" appear)
-        .degree
-          | Bachelor of Computing
-          br
-          .university
-            | University of Sydney
+        .degree Bachelor of Computing
+          .university University of Sydney
+            |
             |
             span - Dean's List
 
@@ -190,6 +188,9 @@ h1
   letter-spacing .016em
 
 .degree
+  display flex
+  flex-direction column
+  justify-content center
   flex 1
   border-left 1px solid
   padding-left 15px
