@@ -31,7 +31,7 @@ a
 
   .link-underline
     position absolute
-    top 1.3em
+    top 1.25em
     left 0
     width 100%
     height 2px
