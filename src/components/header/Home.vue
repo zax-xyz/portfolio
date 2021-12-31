@@ -56,7 +56,7 @@ export default {
         },
         {
           name: "Resume/CV",
-          ref: "/resume.pdf",
+          ref: require("./assets/resume.pdf"),
         },
         {
           name: "LinkedIn",
@@ -126,7 +126,7 @@ strong
 #bg
   width 100%
   height 100%
-  background-image url('../../assets/bg.jpeg')
+  background-image url('./assets/bg.jpeg')
   background-position center
   background-size cover
   background-repeat no-repeat
