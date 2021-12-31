@@ -1,15 +1,17 @@
 <template lang="pug">
-  .main
-    .wrapper
-      About
-      Experience
-      Projects
+.main
+  .wrapper
+    About
+    Experience
+    Projects
+    Contact
 </template>
 
 <script>
 import About from "@/components/About.vue";
 import Experience from "@/components/Experience.vue";
 import Projects from "@/components/Projects.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
@@ -17,6 +19,7 @@ export default {
     About,
     Experience,
     Projects,
+    Contact,
   },
 };
 </script>
@@ -27,7 +30,8 @@ export default {
   color white
   line-height 1.5
   font-weight 300
-  background hsl(210, 2%, 9%)
+  background hsl(210, 5%, 9%)
+  background #18181b
 
 .wrapper
   max-width 1200px
@@ -36,12 +40,12 @@ export default {
 
 >>> h1
   // color hsl(210, 60%, 46%)
-  color #60A5FA
-  color #93C5FD
-  color #FDBA74
+  color #60a5fa
+  color #93c5fd
+  color #fdba74
 
-$link-color = #93C5FD
-$link-hover-color = #60A5FA
+$link-color = #93c5fd
+$link-hover-color = #bfdbfe
 
 >>> a
   color $link-color
