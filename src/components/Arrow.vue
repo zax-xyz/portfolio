@@ -1,10 +1,13 @@
 <template lang="pug">
-  div(style="line-height: 0")
-    .outer-container
-      .capture-mouse(v-scroll-to="'.main'")
-      .container
-        .arrow
-        .arrow.small
+div(style="line-height: 0")
+  .outer-container
+    .capture-mouse(v-scroll-to=`{
+      el: '.main',
+      duration: 750,
+    }`)
+    .container
+      .arrow
+      .arrow.small
 </template>
 
 <script>
@@ -40,7 +43,7 @@ export default {
     top 7px
     left 7px
     padding 6px
-    color rgba(255, 255, 255, 0.65)
+    color rgba(255, 255, 255, .65)
 
 @keyframes bob
   50%
