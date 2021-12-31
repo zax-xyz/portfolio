@@ -27,6 +27,7 @@ export default {
   margin-top 25px
   filter drop-shadow(0 0 12px rgba(0, 0, 0, .35))
   transform rotate(45deg)
+  pointer-events none
 
   *
     transition filter .5s
