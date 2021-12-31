@@ -33,6 +33,7 @@ export default {
   font-weight 300
   background hsl(210, 5%, 9%)
   background #18181b
+  overflow-x hidden
 
 .wrapper
   max-width 1200px

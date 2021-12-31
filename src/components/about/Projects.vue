@@ -1,7 +1,5 @@
 <template lang="pug">
-div
-  h1 Projects
-
+Section(title="Projects")
   section
     .img
       img(src="/img/tracker.webp" alt="Project Showcase")
@@ -30,11 +28,13 @@ div
 
 <script>
 import Link from "@/components/Link.vue";
+import Section from "@/components/about/Section.vue";
 
 export default {
   name: "Projects",
   components: {
     Link,
+    Section,
   },
 };
 </script>
@@ -51,7 +51,7 @@ section
   .description
     grid-column 2
 
-  &:nth-child(odd)
+  &:nth-child(even)
     .img
       grid-column 2
       grid-row 1

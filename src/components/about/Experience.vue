@@ -1,7 +1,5 @@
 <template lang="pug">
-div
-  h1 Experience
-
+Section(title="Experience")
   section
     h2 Canva
       span.title Frontend Software Engineer Intern
@@ -25,8 +23,13 @@ div
 </template>
 
 <script>
+import Section from "@/components/about/Section.vue";
+
 export default {
   name: "Experience",
+  components: {
+    Section,
+  },
 };
 </script>
 
