@@ -26,6 +26,7 @@ export default {
 
 <style lang="stylus" scoped>
 .main
+  position relative
   padding 35px
   color white
   line-height 1.5

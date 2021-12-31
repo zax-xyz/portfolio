@@ -1,8 +1,9 @@
 <template lang="pug">
 #home
   .bg-fallback
-  .bg
-  .container
+  #bgContainer
+    #bg
+  #header
     transition(name="fade-down" appear)
       h1 Michael
         |
@@ -64,6 +65,32 @@ export default {
       ],
     };
   },
+
+  mounted() {
+    const scene = this.$scrollmagic
+      .scene({
+        offset: 0,
+        duration: window.innerHeight,
+      })
+      .setTween("#header", {
+        css: {
+          scale: 0.75,
+          opacity: 0,
+        },
+      });
+
+    const scene2 = this.$scrollmagic
+      .scene({
+        offset: 0,
+        duration: window.innerHeight,
+      })
+      .setTween("#bgContainer", {
+        css: { scale: 2.5 },
+      });
+
+    this.$scrollmagic.addScene(scene);
+    this.$scrollmagic.addScene(scene2);
+  },
 };
 </script>
 
@@ -85,7 +112,7 @@ strong
   line-height 1.35
 
 .bg-fallback
-.bg
+#bgContainer
   position fixed
   top 0
   right 0
@@ -96,7 +123,9 @@ strong
 .bg-fallback
   background-color #121212
 
-.bg
+#bg
+  width 100%
+  height 100%
   background-image url('../assets/bg.jpeg')
   background-position center
   background-size cover
@@ -117,7 +146,8 @@ strong
   50%
     transform scale(1.15)
 
-.container
+#header
+  position fixed
   max-width 1000px
   width 100%
   padding 0 25px
