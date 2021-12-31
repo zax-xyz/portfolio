@@ -1,11 +1,11 @@
 <template lang="pug">
-  #app
-    Home
-    router-view
+#app
+  Home
+  router-view
 </template>
 
 <script>
-import Home from "./components/Home.vue";
+import Home from "@/components/header/Home.vue";
 
 export default {
   components: {
@@ -16,7 +16,7 @@ export default {
 
 <style lang="stylus">
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap')
 
 *
   box-sizing border-box

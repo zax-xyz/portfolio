@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Link from "./Link.vue";
+import Link from "@/components/Link.vue";
 
 export default {
   name: "About",
