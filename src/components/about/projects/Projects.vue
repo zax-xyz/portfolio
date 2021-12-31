@@ -24,6 +24,13 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Uses #[strong Celery] and #[strong Redis] to asynchronously handle subroutines to connect to Twitch's IRC servers and run in the background to dynamically change the user's colour after every message.
 
       a.github(href="https://github.com/zaxutic/colours") Source Code
+
+  section
+    .img
+      p(style="text-align: center") 👉👈
+    .description
+      h2 i'll add more to this list eventually
+      p i prommie
 </template>
 
 <script>
