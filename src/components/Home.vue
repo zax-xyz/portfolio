@@ -196,16 +196,13 @@ h1
   transition opacity 1s $easing-curve, transform 1s $easing-curve
   transition-delay 1.75s
 
-  line
+  >>> line
     stroke-dasharray 1, 0 !important
     stroke-dashoffset -50% !important
 
 .fade-up-enter
   opacity 0
   transform translateY(20px)
-
-  line
-    stroke-dasharray 1, 0
 
 ul
   padding-left 0
