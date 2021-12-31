@@ -32,7 +32,7 @@ export default {
   line-height 1.5
   font-weight 300
   background hsl(210, 5%, 9%)
-  background #18181b
+  background #18181b66
   overflow-x hidden
 
 .wrapper
