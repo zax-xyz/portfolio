@@ -2,7 +2,7 @@
 Section(title="Projects")
   section
     .img
-      img(src="@/assets/tracker.webp" alt="Project Showcase")
+      img(src="./assets/tracker.webp" alt="Project Showcase")
     .description
       h2
         Link(href="https://tracker.zaxu.xyz") KH Rando Tracker
@@ -16,7 +16,7 @@ Section(title="Projects")
 
   section
     .img
-      img(src="@/assets/colours.webp" alt="Project Showcase")
+      img(src="./assets/colours.webp" alt="Project Showcase")
     .description
       h2
         Link(href="https://colours.zaxu.xyz") Twitch Colours
@@ -82,7 +82,7 @@ a
       display block
       width 1.5em
       height 1.5em
-      background-image url('/img/github.svg')
+      background-image url('./assets/github.svg')
       filter invert(1)
 
 h2

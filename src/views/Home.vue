@@ -10,7 +10,7 @@
 <script>
 import About from "@/components/about/About.vue";
 import Experience from "@/components/about/Experience.vue";
-import Projects from "@/components/about/Projects.vue";
+import Projects from "@/components/about/projects/Projects.vue";
 import Contact from "@/components/about/Contact.vue";
 
 export default {
