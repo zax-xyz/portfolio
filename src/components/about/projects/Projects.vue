@@ -1,5 +1,5 @@
 <template lang="pug">
-Section(title="Projects")
+Section(title="Projects" :animateContent="false" ref="sections")
   section
     .img
       img(src="./assets/tracker.webp" alt="Project Showcase")
@@ -36,6 +36,11 @@ export default {
     Link,
     Section,
   },
+  mounted() {
+    this.$refs.sections.$slots.default.forEach(section => {
+      this.$refs.sections.scrollReveal(section.elm);
+    });
+  },
 };
 </script>
 
@@ -43,6 +48,9 @@ export default {
 section
   display grid
   grid-template-columns repeat(2, minmax(0, 1fr))
+  opacity 0
+  transform translateX(-50%)
+  transition opacity .75s, transform .75s
 
   .img
     grid-column 1
@@ -52,12 +60,18 @@ section
     grid-column 2
 
   &:nth-child(even)
+    transform translateX(50%)
+
     .img
       grid-column 2
       grid-row 1
 
     .description
       grid-column 1
+
+  &.visible
+    opacity 1
+    transform none
 
 a
   text-decoration none
