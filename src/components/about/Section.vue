@@ -52,8 +52,6 @@ h1
     transform none
 
 h1
-  transform translateX(-150px)
-
 .content.animate
-  transform translateX(150px)
+  transform translateY(30px)
 </style>
