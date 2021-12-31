@@ -4,7 +4,7 @@ div
 
   section
     .img
-      img(src="/img/tracker.png" alt="Project Showcase")
+      img(src="/img/tracker.webp" alt="Project Showcase")
     .description
       h2
         Link(href="https://tracker.zaxu.xyz") KH Rando Tracker
@@ -18,7 +18,7 @@ div
 
   section
     .img
-      img(src="/img/colours.png" alt="Project Showcase")
+      img(src="/img/colours.webp" alt="Project Showcase")
     .description
       h2
         Link(href="https://colours.zaxu.xyz") Twitch Colours
