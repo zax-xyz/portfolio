@@ -1,14 +1,8 @@
 <template lang="pug">
-  a(
-    :href="href"
-    :target="target"
-  )
-    slot
-    svg.link-underline
-      line(
-        x1="0"
-        x2="100%"
-      )
+a(:href="href" :target="target")
+  slot
+  svg.link-underline
+    line(x1="0" x2="100%")
 </template>
 
 <script>

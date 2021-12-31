@@ -1,37 +1,35 @@
 <template lang="pug">
-  #home
-    .bg-fallback
-    .bg
-    .container
-      transition(name="fade-down" appear)
-        h1 Michael 
-          span Vo
-      .flex
-        transition(name="zoom" appear)
-          .major
-            strong Frontend Software Engineer
-            br
-            strong Computer Science
-            |  Major
-        transition(name="slide-right" appear)
-          .degree
-            | Bachelor of Computing
-            br
-            .university
-              | University of Sydney
-              | 
-              span - Dean's List
+#home
+  .bg-fallback
+  .bg
+  .container
+    transition(name="fade-down" appear)
+      h1 Michael
+        span Vo
+    .flex
+      transition(name="zoom" appear)
+        .major
+          strong Frontend Software Engineer
+          br
+          strong Computer Science
+          |
+          | Major
+      transition(name="slide-right" appear)
+        .degree
+          | Bachelor of Computing
+          br
+          .university
+            | University of Sydney
+            |
+            span - Dean's List
 
-      transition(name="fade-up" appear)
-        div
-          ul
-            li(v-for="link in links")
-              Link(
-                :href="link.ref"
-                target="_blank"
-              ) {{ link.name }}
+    transition(name="fade-up" appear)
+      div
+        ul
+          li(v-for="link in links")
+            Link(:href="link.ref" target="_blank") {{ link.name }}
 
-          Arrow
+        Arrow
 </template>
 
 <script>
@@ -101,7 +99,6 @@ strong
   background-position center
   background-size cover
   background-repeat no-repeat
-
   filter grayscale(.25) brightness(.75)
   animation fade-in 2s $easing-curve, hue-shift 10s 1s infinite, zoom 5s 2s infinite
 
@@ -127,12 +124,11 @@ strong
   text-shadow 4px 4px 8px rgba(0, 0, 0, .35)
 
 // .fade-slide-down-enter-active
-//   transition opacity 1.5s, transform 1.5s
+// transition opacity 1.5s, transform 1.5s
 
 // .fade-slide-down-enter
-//   opacity 0
-//   // transform translateY(-20px)
-
+// opacity 0
+// // transform translateY(-20px)
 .fade-down-enter-active
   transition opacity 1s $easing-curve, transform 1s $easing-curve
   transition-delay 1.25s
@@ -159,7 +155,7 @@ h1
   justify-content center
   flex 2
   font-size 1.35em
-  letter-spacing 0.016em
+  letter-spacing .016em
 
 .degree
   flex 1
