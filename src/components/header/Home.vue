@@ -128,8 +128,8 @@ strong
   background-position center
   background-size cover
   background-repeat no-repeat
-  filter grayscale(.25) brightness(.75)
-  animation fade-in 2s $easing-curve, hue-shift 10s 1s infinite, zoom 5s 2s infinite
+  filter grayscale(.25) brightness(.5) hue-rotate(180deg)
+  animation fade-in 3s $easing-curve, hue-shift 10s 2s infinite, zoom 5s 3s infinite
 
 @keyframes fade-in
   from
@@ -138,7 +138,7 @@ strong
 
 @keyframes hue-shift
   50%
-    filter grayscale(.25) brightness(.5) hue-rotate(180deg)
+    filter grayscale(.5) brightness(.5) hue-rotate(310deg)
 
 @keyframes zoom
   50%

@@ -45,6 +45,7 @@ export default {
   color #60a5fa
   color #93c5fd
   color #fdba74
+  color #fbcfe8
 
 $link-color = #93c5fd
 $link-hover-color = #bfdbfe
