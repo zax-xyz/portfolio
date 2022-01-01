@@ -22,8 +22,19 @@ Section(title="Projects" :animateContent="false" ref="sections")
         Link(href="https://colours.zaxu.xyz") Twitch Colours
       p A full-stack web application using #[strong Vue.js], #[strong Django], and #[strong SQLite], integrating with the Twitch OAuth 2.0 flow for user authentiaction.
       p Uses #[strong Celery] and #[strong Redis] to asynchronously handle subroutines to connect to Twitch's IRC servers and run in the background to dynamically change the user's colour after every message.
+      p Responsive design to handle both desktop and mobile experiences.
 
       a.github(href="https://github.com/zaxutic/colours") Source Code
+
+  section
+    .img
+      img(src="./assets/marks.webp" alt="Project Showcase")
+    .description
+      h2 Marks Tracker (WIP)
+      p A web application intended for keeping track of university marks, built using #[strong React], #[strong TypeScript], #[strong MobX], and #[strong Tailwind CSS].
+      p Generates and displays graphs of marks for each course using #[strong Chart.js].
+      p Plans for a Node.js backend to store and sync data, with OAuth-based user authentication.
+      p Responsive design for pleasant experiences on both desktop and mobile devices.
 
   section
     .img
