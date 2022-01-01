@@ -161,7 +161,7 @@ h2
     opacity 0
     transition opacity .35s
 
-  &:not(.nohover):hover
+  &:hover
     img
       transform scale(1.1)
 
