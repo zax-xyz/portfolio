@@ -114,9 +114,10 @@ h2
   margin 0
   font-size 1.5em
   font-weight 400
+  color $primary
 
   a
-    color $primary
+    color inherit
 
     >>> .link-underline line
       stroke $primary
