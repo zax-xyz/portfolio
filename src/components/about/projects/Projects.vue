@@ -27,7 +27,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       a.github(href="https://github.com/zaxutic/colours") Source Code
 
   section
-    .img
+    .img.nohover
       img(src="./assets/marks.webp" alt="Project Showcase")
     .description
       h2 Marks Tracker (WIP)
@@ -145,7 +145,7 @@ h2
   box-shadow 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)
   overflow hidden
 
-  &::after
+  &:not(.nohover)::after
     content 'Visit Website'
     position absolute
     top 0
@@ -161,7 +161,7 @@ h2
     opacity 0
     transition opacity .35s
 
-  &:hover
+  &:not(.nohover):hover
     img
       transform scale(1.1)
 
