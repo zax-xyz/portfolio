@@ -1,7 +1,7 @@
 <template lang="pug">
 Section(title="Projects" :animateContent="false" ref="sections")
   section
-    .img
+    a.img(href="https://tracker.zaxu.xyz" target="_blank")
       img(src="./assets/tracker.webp" alt="Project Showcase")
     .description
       h2
@@ -15,7 +15,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       a.github(href="https://github.com/zaxutic/kh-rando-tracker") Source Code
 
   section
-    .img
+    a.img(href="https://colours.zaxu.xyz" target="_blank")
       img(src="./assets/colours.webp" alt="Project Showcase")
     .description
       h2
