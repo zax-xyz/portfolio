@@ -53,7 +53,7 @@ export default {
 .capture-mouse
   display block
   position absolute
-  padding 35px 200px
+  padding 35px 250px
   left 50%
   bottom 50%
   transform translate(-50%, 80%)
