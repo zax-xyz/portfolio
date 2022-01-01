@@ -1,15 +1,17 @@
 <template lang="pug">
 Section(title="Experience")
   section
-    h2 Canva
-      span.title Frontend Software Engineer Intern
+    h2
+      span Canva
+        span.title Frontend Software Engineer Intern
       aside
         span.location Sydney, AU
         span.period Dec 2021 – Feb 2022
 
   section
-    h2 Enrich Eduction
-      span.title Full Stack Developer
+    h2
+      span Enrich Eduction
+        span.title Full Stack Developer
       aside
         span.location Sydney, AU
         span.period Dec 2019 – Feb 2020
@@ -58,4 +60,13 @@ h2
 
   aside
     margin-left auto
+
+  @media screen and (max-width 768px)
+    flex-direction column
+
+    aside
+      font-size .8em
+
+    .title
+      font-size .8em
 </style>

@@ -180,6 +180,13 @@ h1
   display flex
   perspective 1000px
 
+  @media screen and (max-width 768px)
+    flex-direction column
+
+    .degree
+      border-left 0
+      margin-top .5em
+
 .major
   align-self center
   justify-content center

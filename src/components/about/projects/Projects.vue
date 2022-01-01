@@ -84,6 +84,21 @@ section
     opacity 1
     transform none
 
+  @media screen and (max-width 1024px)
+    grid-template-columns 1fr
+    grid-template-rows 2fr
+
+    &:first-child .description
+      margin-top 0
+
+    .img
+      grid-column 1 !important
+      grid-row 2 !important
+      margin-top 0
+
+    .description
+      grid-column 1
+
 a
   text-decoration none
 
