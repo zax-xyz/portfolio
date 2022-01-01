@@ -109,6 +109,9 @@ strong
   text-align center
   line-height 1.35
 
+  @media screen and (max-width 768px)
+    font-size 1rem
+
 .bg-fallback
 #bgContainer
   position fixed
