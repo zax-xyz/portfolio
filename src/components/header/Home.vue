@@ -28,7 +28,7 @@
       div
         ul
           li(v-for="link in links")
-            Link(:href="link.ref" target="_blank") {{ link.name }}
+            Link(:href="link.ref" target="_blank" rel="noopener") {{ link.name }}
 
         Arrow
 </template>
