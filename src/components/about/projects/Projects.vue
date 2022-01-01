@@ -90,12 +90,12 @@ a
     color white
     padding .5em .75em
     border-radius 2em
-    background-color hsl(0, 0, 15%)
+    background-color $btn-bg
     box-shadow 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)
     transition background-color .2s, color .2s, box-shadow .2s
 
     &:hover
-      background-color hsl(0, 0, 20%)
+      background-color $btn-hover-bg
       box-shadow 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
 
     &::before
@@ -110,7 +110,15 @@ h2
   margin 0
   font-size 1.5em
   font-weight 400
-  color $link-color
+
+  a
+    color $primary
+
+    >>> .link-underline line
+      stroke $primary
+
+    &:hover
+      color $primary-alt
 
 .img
 .description

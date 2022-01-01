@@ -1,3 +1,6 @@
+const webpack = require("webpack");
+const path = require("path");
+
 module.exports = {
   configureWebpack: {
     module: {
@@ -8,6 +11,15 @@ module.exports = {
         },
       ],
     },
+    plugins: [
+      new webpack.LoaderOptionsPlugin({
+        options: {
+          stylus: {
+            import: [path.resolve(__dirname, "./src/assets/stylus/colors.styl")],
+          },
+        },
+      }),
+    ],
   },
   chainWebpack: config => {
     config

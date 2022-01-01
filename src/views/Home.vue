@@ -31,9 +31,8 @@ export default {
   color white
   line-height 1.5
   font-weight 300
-  background hsl(210, 5%, 9%)
-  background #18181b66
-  background transparent
+  background $main-bg
+  box-shadow 0 0 10px $main-bg
   overflow-x hidden
 
 .wrapper
@@ -42,25 +41,18 @@ export default {
   margin 0 auto
 
 >>> h1
-  // color hsl(210, 60%, 46%)
-  color #60a5fa
-  color #93c5fd
-  color #fdba74
-  color #fbcfe8
-
-$link-color = #93c5fd
-$link-hover-color = #bfdbfe
+  color $primary
 
 >>> a
-  color $link-color
+  color $secondary
   font-weight 400
   transition color .2s, filter .5s
 
   .link-underline
     line
-      stroke $link-color
+      stroke $secondary
 
   &:hover
-    color $link-hover-color
+    color $secondary-alt
     filter none
 </style>

@@ -45,7 +45,7 @@ h2
   margin-bottom .25em
   font-size 1.2em
   font-weight 400
-  color #bfdbfe
+  color $secondary
 
   .title
   aside
