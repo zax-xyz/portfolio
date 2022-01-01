@@ -55,4 +55,7 @@ export default {
   &:hover
     color $secondary-alt
     filter none
+
+>>> strong
+  font-weight bolder
 </style>
