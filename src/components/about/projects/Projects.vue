@@ -35,13 +35,6 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Generates and displays graphs of marks for each course using #[strong Chart.js].
       p Plans for a Node.js backend to store and sync data, with OAuth-based user authentication.
       p Responsive design for pleasant experiences on both desktop and mobile devices.
-
-  section
-    .img
-      p(style="text-align: center") 👉👈
-    .description
-      h2 i'll add more to this list eventually
-      p i prommie
 </template>
 
 <script>
