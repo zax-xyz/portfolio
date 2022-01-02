@@ -35,6 +35,9 @@ export default {
   box-shadow 0 0 10px $main-bg
   overflow-x hidden
 
+  @media screen and (max-width 768px)
+    padding 25px
+
 .wrapper
   max-width 1200px
   width 100%
