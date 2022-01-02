@@ -88,16 +88,19 @@ section
     grid-template-columns 1fr
     grid-template-rows 2fr
 
+    &:not(:first-child)
+      margin-top 25px
+
     &:first-child .description
       margin-top 0
 
     .img
       grid-column 1 !important
       grid-row 2 !important
-      margin-top 0
 
     .description
       grid-column 1
+      margin 0
 
 a
   text-decoration none
