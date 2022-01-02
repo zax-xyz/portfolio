@@ -12,7 +12,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Abstracts away a large part of the #[Link(href="https://jsmartee.github.io/kh2fm-hints-demo/info.html#logic") logic] involved in hints for people to easily use them to their advantage, by making as many deducations from the current information as possible.
       p Supports mobile, allowing Twitch streamers to use their phone to control the on-stream tracker without unfocusing the game on their desktop.
 
-      a.github(href="https://github.com/zaxutic/kh-rando-tracker") Source Code
+      GithubButton(href="https://github.com/zaxutic/kh-rando-tracker") Source Code
 
   section
     a.img(href="https://colours.zaxu.xyz" target="_blank" rel="noopener")
@@ -24,7 +24,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Uses #[strong Celery] and #[strong Redis] to asynchronously handle subroutines to connect to Twitch's IRC servers and run in the background to dynamically change the user's colour after every message.
       p Responsive design to handle both desktop and mobile experiences.
 
-      a.github(href="https://github.com/zaxutic/colours") Source Code
+      GithubButton(href="https://github.com/zaxutic/colours") Source Code
 
   section
     .img.nohover
@@ -38,12 +38,14 @@ Section(title="Projects" :animateContent="false" ref="sections")
 </template>
 
 <script>
+import GithubButton from "./GithubButton.vue";
 import Link from "@/components/Link.vue";
 import Section from "@/components/about/Section.vue";
 
 export default {
   name: "Projects",
   components: {
+    GithubButton,
     Link,
     Section,
   },
@@ -104,29 +106,6 @@ section
 
 a
   text-decoration none
-
-  &.github
-    display flex
-    justify-content center
-    gap .5ch
-    color white
-    padding .5em .75em
-    border-radius 2em
-    background-color $btn-bg
-    box-shadow 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)
-    transition background-color .2s, color .2s, box-shadow .2s
-
-    &:hover
-      background-color $btn-bg-alt
-      box-shadow 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)
-
-    &::before
-      content ''
-      display block
-      width 1.5em
-      height 1.5em
-      background-image url('./assets/github.svg')
-      filter invert(1)
 
 h2
   margin 0
