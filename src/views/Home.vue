@@ -1,6 +1,6 @@
 <template lang="pug">
-.main
-  .wrapper
+main
+  .container
     About
     Experience
     Projects
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.main
+main
   position relative
   padding 35px
   color white
@@ -38,7 +38,7 @@ export default {
   @media screen and (max-width 768px)
     padding 25px
 
-.wrapper
+.container
   max-width 1200px
   width 100%
   margin 0 auto
