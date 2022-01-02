@@ -256,7 +256,7 @@ h1 {
   transition: opacity 1s $easing-curve, transform 1s $easing-curve;
   transition-delay: 1.75s;
 
-  &::v-dep line {
+  &::v-deep line {
     stroke-dasharray: 1, 0 !important;
     stroke-dashoffset: -50% !important;
   }
