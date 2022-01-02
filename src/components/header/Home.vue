@@ -1,9 +1,9 @@
 <template lang="pug">
-#home
+header
   .bg-fallback
   #bgContainer
-    #bg
-  #header
+    .bg
+  article#headerContent
     transition(name="fade-down" appear)
       h1 Michael
         |
@@ -18,7 +18,7 @@
           |
           | Major
       transition(name="slide-right" appear)
-        .degree Bachelor of Computing
+        aside.degree Bachelor of Computing
           .university University of Sydney
             |
             |
@@ -70,7 +70,7 @@ export default {
         offset: 0,
         duration: window.innerHeight,
       })
-      .setTween("#header", {
+      .setTween("#headerContent", {
         css: {
           scale: 0.75,
           opacity: 0,
@@ -98,7 +98,7 @@ $easing-curve = cubic-bezier(.4, .06, .2, .9)
 strong
   font-weight bolder
 
-#home
+header
   display flex
   align-items center
   justify-content center
@@ -124,7 +124,7 @@ strong
 .bg-fallback
   background-color #121212
 
-#bg
+.bg
   width 100%
   height 100%
   background-image url('./assets/bg.jpeg')
@@ -147,7 +147,7 @@ strong
   50%
     transform scale(1.15)
 
-#header
+article
   position fixed
   max-width 1000px
   width 100%
