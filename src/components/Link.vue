@@ -1,5 +1,5 @@
 <template lang="pug">
-a(:href="href" :target="target")
+a
   slot
   svg.link-underline
     line(x1="0" x2="100%")
@@ -8,16 +8,6 @@ a(:href="href" :target="target")
 <script>
 export default {
   name: "Link",
-
-  props: {
-    href: {
-      type: String,
-      required: true,
-    },
-    target: {
-      type: String,
-    },
-  },
 };
 </script>
 
