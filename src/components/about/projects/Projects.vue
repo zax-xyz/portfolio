@@ -57,117 +57,143 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-section
-  display grid
-  grid-template-columns repeat(2, minmax(0, 1fr))
-  opacity 0
-  transform translateX(150px)
-  transition opacity 1s, transform .75s
+<style lang="scss" scoped>
+section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 1s, transform 0.75s;
 
-  .img
-    grid-column 1
-    grid-row 1
+  .img {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-  .description
-    grid-column 2
+  .description {
+    grid-column: 2;
+  }
 
-  &:nth-child(even)
-    transform translateX(-150px)
+  &:nth-child(even) {
+    transform: translateX(-150px);
 
-    .img
-      grid-column 2
-      grid-row 1
+    .img {
+      grid-column: 2;
+      grid-row: 1;
+    }
 
-    .description
-      grid-column 1
+    .description {
+      grid-column: 1;
+    }
+  }
 
-  &.visible
-    opacity 1
-    transform none
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
 
-  @media screen and (max-width 1024px)
-    grid-template-columns 1fr
-    grid-template-rows 2fr
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
 
-    &:not(:first-child)
-      margin-top 25px
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
 
-    &:first-child .description
-      margin-top 0
+    &:first-child .description {
+      margin-top: 0;
 
-    .img
-      grid-column 1 !important
-      grid-row 2 !important
+      .img {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+      }
 
-    .description
-      grid-column 1
-      margin 0
+      .description {
+        grid-column: 1;
+        margin: 0;
+      }
+    }
+  }
+}
 
-a
-  text-decoration none
+a {
+  text-decoration: none;
+}
 
-h2
-  margin 0
-  font-size 1.5em
-  font-weight 400
-  color $primary
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: $primary;
 
-  a
-    color inherit
+  a {
+    color: inherit;
 
-    >>> .link-underline line
-      stroke $primary
+    &::v-deep .link-underline line {
+      stroke: $primary;
+    }
 
-    &:hover
-      color $primary-alt
+    &:hover {
+      color: $primary-alt;
+    }
+  }
+}
 
-.img
-.description
-  display flex
-  flex-direction column
-  justify-content center
-  margin 25px
+.img,
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+}
 
-.description
-  gap 10px
-  text-align center
+.description {
+  gap: 10px;
+  text-align: center;
 
-  p
-    margin 0
+  p {
+    margin: 0;
+  }
+}
 
-.img
-  position relative
-  border-radius 4px
-  box-shadow 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)
-  overflow hidden
+.img {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
 
-  &:not(.nohover)::after
-    content 'Visit Website'
-    position absolute
-    top 0
-    right 0
-    bottom 0
-    left 0
-    display flex
-    align-items center
-    justify-content center
-    font-weight 600
-    background rgba(0, 0, 0, .8)
-    cursor pointer
-    opacity 0
-    transition opacity .35s
+  &:not(.nohover)::after {
+    content: "Visit Website";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
 
-  &:hover
-    img
-      transform scale(1.1)
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
 
-    &::after
-      opacity 1
+    &::after {
+      opacity: 1;
+    }
+  }
+}
 
-img
-  height 100%
-  width 100%
-  object-fit cover
-  transition transform .35s
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.35s;
+}
 </style>

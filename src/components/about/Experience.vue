@@ -35,38 +35,47 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-p
-  margin .5em 0
+<style lang="scss" scoped>
+p {
+  margin: 0.5em 0;
+}
 
-ul
-  margin 0
+ul {
+  margin: 0;
+}
 
-h2
-  display flex
-  margin-bottom .25em
-  font-size 1.2em
-  font-weight 400
-  color $secondary
+h2 {
+  display: flex;
+  margin-bottom: 0.25em;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: $secondary;
 
-  .title
-  aside
-    font-weight 300
+  .title,
+  aside {
+    font-weight: 300;
+  }
 
-  .title::before
-  .location::after
-    content '|'
-    margin 0 .5ch
+  .title::before,
+  .location::after {
+    content: "|";
+    margin: 0 0.5ch;
+  }
 
-  aside
-    margin-left auto
+  aside {
+    margin-left: auto;
+  }
 
-  @media screen and (max-width 768px)
-    flex-direction column
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
 
-    aside
-      font-size .8em
+    aside {
+      font-size: 0.8em;
+    }
 
-    .title
-      font-size .8em
+    .title {
+      font-size: 0.8em;
+    }
+  }
+}
 </style>

@@ -92,166 +92,193 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-$easing-curve = cubic-bezier(.4, .06, .2, .9)
+<style lang="scss" scoped>
+$easing-curve: cubic-bezier(0.4, 0.06, 0.2, 0.9);
 
-strong
-  font-weight bolder
+strong {
+  font-weight: bolder;
+}
 
-header
-  display flex
-  align-items center
-  justify-content center
-  min-height 100vh
-  color white
-  font-size 18px
-  font-weight 300
-  text-align center
-  line-height 1.35
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.35;
 
-  @media screen and (max-width 768px)
-    font-size 1rem
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
 
-.bg-fallback
-#bgContainer
-  position fixed
-  top 0
-  right 0
-  bottom 0
-  left 0
-  z-index -1
+.bg-fallback,
+#bgContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
 
-.bg-fallback
-  background-color #121212
+.bg-fallback {
+  background-color: #121212;
+}
 
-.bg
-  width 100%
-  height 100%
-  background-image url('./assets/bg.jpeg')
-  background-position center
-  background-size cover
-  background-repeat no-repeat
-  filter grayscale(.25) brightness(.5) hue-rotate(180deg)
-  animation fade-in 3s $easing-curve, hue-shift 10s 2s infinite, zoom 5s 3s infinite
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.25) brightness(0.5) hue-rotate(180deg);
+  animation: fade-in 3s $easing-curve, hue-shift 10s 2s infinite, zoom 5s 3s infinite;
+}
 
-@keyframes fade-in
-  from
-    opacity 0
-    transform scale(1.75)
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(1.75);
+  }
+}
 
-@keyframes hue-shift
-  50%
-    filter grayscale(.5) brightness(.5) hue-rotate(310deg)
+@keyframes hue-shift {
+  50% {
+    filter: grayscale(0.5) brightness(0.5) hue-rotate(310deg);
+  }
+}
 
-@keyframes zoom
-  50%
-    transform scale(1.15)
+@keyframes zoom {
+  50% {
+    transform: scale(1.15);
+  }
+}
 
-article
-  position fixed
-  max-width 1000px
-  width 100%
-  padding 0 25px
-  perspective 1000px
-  // filter drop-shadow(4px 4px 6px rgba(0, 0, 0, .35))
-  text-shadow 4px 4px 8px rgba(0, 0, 0, .35)
+article {
+  position: fixed;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 25px;
+  perspective: 1000px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
 
-// .fade-slide-down-enter-active
-// transition opacity 1.5s, transform 1.5s
+.fade-down-enter-active {
+  transition: opacity 1s $easing-curve, transform 1s $easing-curve;
+  transition-delay: 1.25s;
+}
 
-// .fade-slide-down-enter
-// opacity 0
-// // transform translateY(-20px)
-.fade-down-enter-active
-  transition opacity 1s $easing-curve, transform 1s $easing-curve
-  transition-delay 1.25s
+.fade-down-enter {
+  opacity: 0;
+  transform: translateY(-25px);
+}
 
-.fade-down-enter
-  opacity 0
-  transform translateY(-25px)
+h1 {
+  margin-top: 0;
+  font-size: 3.5em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 
-h1
-  margin-top 0
-  font-size 3.5em
-  font-weight 300
-  letter-spacing .02em
+  span {
+    font-weight: 100;
+  }
+}
 
-  span
-    font-weight 100
+.flex {
+  display: flex;
+  perspective: 1000px;
 
-.flex
-  display flex
-  perspective 1000px
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
 
-  @media screen and (max-width 768px)
-    flex-direction column
+    .degree {
+      border-left: 0;
+      margin-top: 0.5em;
+    }
+  }
+}
 
-    .degree
-      border-left 0
-      margin-top .5em
+.major {
+  align-self: center;
+  justify-content: center;
+  flex: 2;
+  font-size: 1.35em;
+  letter-spacing: 0.016em;
+}
 
-.major
-  align-self center
-  justify-content center
-  flex 2
-  font-size 1.35em
-  letter-spacing .016em
+.degree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  border-left: 1px solid;
+  padding-left: 15px;
+}
 
-.degree
-  display flex
-  flex-direction column
-  justify-content center
-  flex 1
-  border-left 1px solid
-  padding-left 15px
+.university {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: break-spaces;
 
-.university
-  display flex
-  align-items center
-  justify-content center
-  white-space break-spaces
+  span {
+    color: #bbb;
+    font-size: 0.8em;
+  }
+}
 
-  span
-    color #bbb
-    font-size .8em
+.zoom-enter-active {
+  transition: opacity 2s $easing-curve, transform 2s $easing-curve;
+  transition-delay: 0.5s;
+}
 
-.zoom-enter-active
-  transition opacity 2s $easing-curve, transform 2s $easing-curve
-  transition-delay .5s
+.zoom-enter {
+  opacity: 0;
+  transform: translateZ(325px);
+}
 
-.zoom-enter
-  opacity 0
-  transform translateZ(325px)
+.slide-right-enter-active {
+  transition: opacity 2s $easing-curve, transform 2s $easing-curve;
+  transition-delay: 0.8s;
+}
 
-.slide-right-enter-active
-  transition opacity 2s $easing-curve, transform 2s $easing-curve
-  transition-delay .8s
+.slide-right-enter {
+  opacity: 0;
+  transform: translateX(-200px);
+}
 
-.slide-right-enter
-  opacity 0
-  transform translateX(-200px)
+.fade-up-enter-active {
+  transition: opacity 1s $easing-curve, transform 1s $easing-curve;
+  transition-delay: 1.75s;
 
-.fade-up-enter-active
-  transition opacity 1s $easing-curve, transform 1s $easing-curve
-  transition-delay 1.75s
+  &::v-dep line {
+    stroke-dasharray: 1, 0 !important;
+    stroke-dashoffset: -50% !important;
+  }
+}
 
-  >>> line
-    stroke-dasharray 1, 0 !important
-    stroke-dashoffset -50% !important
+.fade-up-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
 
-.fade-up-enter
-  opacity 0
-  transform translateY(20px)
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 1.2em;
+}
 
-ul
-  padding-left 0
-  margin-bottom 0
-  list-style none
-  font-size 1.2em
+li {
+  display: inline;
 
-li
-  display inline
-
-  &:not(:last-child)::after
-    content ' | '
+  &:not(:last-child)::after {
+    content: " | ";
+  }
+}
 </style>

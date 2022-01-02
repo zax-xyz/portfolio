@@ -41,19 +41,23 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-h1
-.content.animate
-  opacity 0
-  transition opacity 1s, transform .75s
+<style lang="scss" scoped>
+h1,
+.content.animate {
+  opacity: 0;
+  transition: opacity 1s, transform 0.75s;
 
-  &.visible
-    opacity 1
-    transform none
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-h1
-  transform translateX(-150px)
+h1 {
+  transform: translateX(-150px);
+}
 
-.content.animate
-  transform translateX(150px)
+.content.animate {
+  transform: translateX(150px);
+}
 </style>

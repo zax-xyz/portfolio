@@ -11,15 +11,6 @@ module.exports = {
         },
       ],
     },
-    plugins: [
-      new webpack.LoaderOptionsPlugin({
-        options: {
-          stylus: {
-            import: [path.resolve(__dirname, "./src/assets/stylus/colors.styl")],
-          },
-        },
-      }),
-    ],
   },
   chainWebpack: config => {
     config
@@ -36,5 +27,14 @@ module.exports = {
       .end()
       .use("vue-svg-loader")
       .loader("vue-svg-loader");
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `
+          @import "@/assets/scss/colors.scss";
+        `,
+      },
+    },
   },
 };
