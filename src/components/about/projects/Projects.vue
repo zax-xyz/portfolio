@@ -100,18 +100,14 @@ section {
       margin-top: 25px;
     }
 
-    &:first-child .description {
-      margin-top: 0;
+    .img {
+      grid-column: 1 !important;
+      grid-row: 2 !important;
+    }
 
-      .img {
-        grid-column: 1 !important;
-        grid-row: 2 !important;
-      }
-
-      .description {
-        grid-column: 1;
-        margin: 0;
-      }
+    .description {
+      grid-column: 1;
+      margin: 0;
     }
   }
 }
