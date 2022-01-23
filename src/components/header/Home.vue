@@ -58,7 +58,7 @@ export default {
         },
         {
           name: "LinkedIn",
-          ref: "https://www.linkedin.com/in/michael-v-1049841a3/",
+          ref: "https://www.linkedin.com/in/michael--vo/",
         },
       ],
     };
