@@ -19,7 +19,7 @@ Section(title="Experience")
     p I was the sole developer at this K-12 tutoring centre.
 
     ul
-      li Created automated web tutoring report system using #[strong Vue.js], #[strong Django REST Framework], and #[strong SQLite with user authentication]
+      li Created automated web tutoring report system using #[strong Vue.js], #[strong Django REST Framework], and #[strong SQLite]
       li Concisely visualised weekly student performance against the rest of their classes with interactive graphs using #[strong Chart.js]
       li Automatically emailed termly summarised reports created with #[strong Matplotlib] and #[strong custom HTML templates] using the #[strong Gmail API]
 </template>
