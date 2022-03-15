@@ -4,7 +4,7 @@ Section(title="Hi there!")
   p I've gone through a few different areas but my current focus is frontend web development, and creating beautiful and usable interfaces. I wish to bring as much value to others as possible, empowering people and making the world a better place where I can, while trying to improve myself at the same time and learn as much as I can.
   p I want to improve myself not just as a developer but as a person and grow emotionally and mentally.
   p I'm a supporter of Free &amp; Open Source Software (FOSS), Linux, and minimalism where appropriate — both in technology and in life in general.
-  p I'm currently working at #[Link(href="https://www.canva.com/") Canva] this 2021–2022 summer as a Frontend Software Engineer Intern! :)
+  p I recently worked at #[Link(href="https://www.canva.com/") Canva] over the 2021–2022 summer as a Frontend Software Engineer Intern, and I'm currently a member of the Computer Science and Engineering Society (CSESoc) at the University of New South Wales (UNSW) in the project subcommittee.
 </template>
 
 <script>
