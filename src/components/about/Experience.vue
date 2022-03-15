@@ -2,11 +2,27 @@
 Section(title="Experience")
   section
     h2
+      span UNSW Computer Science and Engineering Society (CSESoc)
+        span.title Projects Subcommittee Member
+      aside
+        span.location Sydney, AU
+        span.period Feb 2022 - Present
+
+    ul
+      li Working on the React frontend for an in-house hiring management system as part of a team
+
+  section
+    h2
       span Canva
         span.title Frontend Software Engineer Intern
       aside
         span.location Sydney, AU
         span.period Dec 2021 – Feb 2022
+        
+    ul
+      li Developed an internal tool to facilitate the efficient evaluation of an algorithm and improve workflows, using React, TypeScript, and MobX
+      li Significantly improved testing processes with a new pipeline to improve developer productivity and reduce friction
+      li Analysed data using SQL and Python to extract user insights in order to guide development decisions
 
   section
     h2
@@ -21,7 +37,7 @@ Section(title="Experience")
     ul
       li Created automated web tutoring report system using #[strong Vue.js], #[strong Django REST Framework], and #[strong SQLite]
       li Concisely visualised weekly student performance against the rest of their classes with interactive graphs using #[strong Chart.js]
-      li Automatically emailed termly summarised reports created with #[strong Matplotlib] and #[strong custom HTML templates] using the #[strong Gmail API]
+      li Automatically emailed summarised reports created with #[strong Matplotlib] and at the end of each term to parents of each student using the #[strong Gmail API]
 </template>
 
 <script>
