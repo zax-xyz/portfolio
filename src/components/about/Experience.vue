@@ -18,11 +18,11 @@ Section(title="Experience")
       aside
         span.location Sydney, AU
         span.period Dec 2021 – Feb 2022
-        
+
     ul
-      li Developed an internal tool to facilitate the efficient evaluation of an algorithm and improve workflows, using React, TypeScript, and MobX
+      li Developed an internal tool to facilitate the efficient evaluation of an algorithm and improve workflows, using #[strong React], #[strong TypeScript], and #[strong MobX]
       li Significantly improved testing processes with a new pipeline to improve developer productivity and reduce friction
-      li Analysed data using SQL and Python to extract user insights in order to guide development decisions
+      li Analysed data using #[strong SQL] and #[strong Python] to extract user insights in order to guide development decisions
 
   section
     h2
