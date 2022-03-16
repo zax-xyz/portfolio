@@ -9,7 +9,7 @@ Section(title="Experience")
         span.period Feb 2022 - Present
 
     ul
-      li Working on the React frontend for an in-house hiring management system as part of a team
+      li Working on the #[strong React] frontend for an in-house hiring management system as part of a team
 
   section
     h2
