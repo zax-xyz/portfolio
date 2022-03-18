@@ -18,7 +18,7 @@ header
           |
           | Major
       transition(name="slide-right" appear)
-        aside.degree Bachelor of Computing
+        aside.degree Bachelor of Advanced Computing
           .university University of Sydney
             |
             |
