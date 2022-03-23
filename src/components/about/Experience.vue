@@ -9,7 +9,8 @@ Section(title="Experience")
         span.period Feb 2022 - Present
 
     ul
-      li Working on the #[strong React] frontend for an in-house hiring management system as part of a team
+      li Working in a team on the #[strong React] frontend for an in-house hiring management system that will streamline subcommittee recruitment
+      li Integrating frontend pages with the backend server and authenticating routes to ensure users only see what’s relevant to them
 
   section
     h2
@@ -21,7 +22,7 @@ Section(title="Experience")
 
     ul
       li Developed an internal tool to facilitate the efficient evaluation of an algorithm and improve workflows, using #[strong React], #[strong TypeScript], and #[strong MobX]
-      li Significantly improved testing processes with a new pipeline to improve developer productivity and reduce friction
+      li Significantly improved testing processes with a new pipeline to improve developer productivity and reduce friction (83% reduction in steps)
       li Analysed data using #[strong SQL] and #[strong Python] to extract user insights in order to guide development decisions
 
   section
@@ -38,6 +39,7 @@ Section(title="Experience")
       li Created automated web tutoring report system using #[strong Vue.js], #[strong Django REST Framework], and #[strong SQLite]
       li Concisely visualised weekly student performance against the rest of their classes with interactive graphs using #[strong Chart.js]
       li Automatically emailed summarised reports created with #[strong Matplotlib] and at the end of each term to parents of each student using the #[strong Gmail API]
+      li Significantly improved internal processes for efficiency, accuracy, and reliability, improving satisfaction of both staff and customers
 </template>
 
 <script>
