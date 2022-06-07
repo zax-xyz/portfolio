@@ -82,6 +82,7 @@ h2 {
 
   aside {
     margin-left: auto;
+    color: $primary;
   }
 
   @media screen and (max-width: 768px) {
