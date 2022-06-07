@@ -10,7 +10,8 @@ Section(title="Experience")
 
     ul
       li Working in a team on the #[strong React] frontend for an in-house hiring management system that will streamline subcommittee recruitment
-      li Integrating frontend pages with the backend server and authenticating routes to ensure users only see what’s relevant to them
+      li Developing an MVP for the initial release, and designing the UI/UX for the next version of the website's frontend based on user requirements
+
 
   section
     h2
