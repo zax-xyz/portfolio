@@ -27,7 +27,7 @@ Section(title="Experience")
 
   section
     h2
-      span Enrich Eduction
+      span Enrich Education
         span.title Full Stack Developer
       aside
         span.location Sydney, AU
