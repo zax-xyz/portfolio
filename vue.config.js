@@ -7,7 +7,10 @@ module.exports = {
       rules: [
         {
           test: /\.pdf$/,
-          use: "file-loader",
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash:8].[ext]",
+          },
         },
       ],
     },
