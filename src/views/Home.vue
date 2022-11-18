@@ -3,6 +3,7 @@ main
   .container
     About
     Experience
+    Extracurricular
     Projects
     Contact
 </template>
@@ -10,6 +11,7 @@ main
 <script>
 import About from "@/components/about/About.vue";
 import Experience from "@/components/about/Experience.vue";
+import Extracurricular from "@/components/about/Extracurricular.vue";
 import Projects from "@/components/about/projects/Projects.vue";
 import Contact from "@/components/about/Contact.vue";
 
@@ -18,6 +20,7 @@ export default {
   components: {
     About,
     Experience,
+    Extracurricular,
     Projects,
     Contact,
   },

@@ -1,17 +1,16 @@
 <template lang="pug">
-Section(title="Experience")
+Section(title="Work Experience")
   section
     h2
-      span UNSW Computer Science and Engineering Society (CSESoc)
-        span.title Projects Subcommittee Member
+      span University of Sydney
+        span.title Casual Academic
       aside
         span.location Sydney, AU
-        span.period Feb 2022 - Present
+        span.period Jul 2022 - Present
 
     ul
-      li Working in a team on the #[strong React] frontend for an in-house hiring management system that will streamline subcommittee recruitment
-      li Developing an MVP for the initial release, and designing the UI/UX for the next version of the website's frontend based on user requirements
-
+      li Tutor for INFO1110: Introduction to Programming - #[strong teaching programming in Python] to classes of 20, marking, and conducting viva voces
+      li Topics covered: programming fundamentals, object-oriented programming, recursion, graph traversal/search algorithms
 
   section
     h2
@@ -87,7 +86,9 @@ h2 {
   }
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+    }
 
     aside {
       font-size: 0.8em;
