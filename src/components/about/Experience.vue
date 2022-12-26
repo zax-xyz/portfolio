@@ -8,8 +8,8 @@ Section(title="Work Experience")
         span.location Sydney, AU
         span.period Dec 2022 - Present
 
-      ul
-        li Developing UIs for traders using React and FastAPI
+    ul
+      li Developing UIs for traders using React and FastAPI
 
   section
     h2
