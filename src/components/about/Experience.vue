@@ -9,7 +9,7 @@ Section(title="Work Experience")
         span.period Dec 2022 - Present
 
     ul
-      li Developing UIs for traders using React and FastAPI
+      li Developing UIs for traders using #[strong React] and #[strong FastAPI]
 
   section
     h2
