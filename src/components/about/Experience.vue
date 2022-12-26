@@ -2,6 +2,17 @@
 Section(title="Work Experience")
   section
     h2
+      span Akuna Capital
+        span.title Software Development Intern (Web)
+      aside
+        span.location Sydney, AU
+        span.period Dec 2022 - Present
+
+      ul
+        li Developing UIs for traders using React and FastAPI
+
+  section
+    h2
       span University of Sydney
         span.title Casual Academic
       aside
