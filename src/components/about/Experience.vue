@@ -4,9 +4,9 @@ Section(title="Work Experience")
     h2
       span University of New South Wales
         span.title Casual Academic
-    aside
-      span.location Sydney, AU
-      span.period Feb 2023 - Present
+      aside
+        span.location Sydney, AU
+        span.period Feb 2023 - Present
 
     ul
       li Tutor for #[strong COMP6080: Web Front-End Programming] - teaching classes, running help sessions, and marking
