@@ -2,14 +2,36 @@
 Section(title="Work Experience")
   section
     h2
+      span University of New South Wales
+        span.title Casual Academic
+    aside
+      span.location Sydney, AU
+      span.period Feb 2023 - Present
+
+    ul
+      li Tutor for #[strong COMP6080: Web Front-End Programming] - teaching classes, running help sessions, and marking
+
+  section
+    h2
+      span Akuna Capital
+        span.title Software Development Intern - UI (Web)
+      aside
+        span.location Sydney, AU
+        span.period Dec 2022 - Feb 2023
+
+    ul
+      li Created full stack web-based UIs for traders using #[strong React], #[strong TypeScript], and #[strong FastAPI] (#[strong Python]), deployed to #[strong Kubernetes]
+
+  section
+    h2
       span University of Sydney
         span.title Casual Academic
       aside
         span.location Sydney, AU
-        span.period Jul 2022 - Present
+        span.period Jul 2022 - Dec 2022
 
     ul
-      li Tutor for INFO1110: Introduction to Programming - #[strong teaching programming in Python] to classes of 20, marking, and conducting viva voces
+      li Tutor for #[strong INFO1110: Introduction to Programming] - taught programming in Python to classes of 20, marking, and conducting viva voces
       li Topics covered: programming fundamentals, object-oriented programming, recursion, graph traversal/search algorithms
 
   section
