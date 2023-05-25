@@ -10,6 +10,7 @@ Section(title="Work Experience")
 
     ul
       li Tutor for #[strong COMP6080: Web Front-End Programming] - teaching classes, running help sessions, and marking
+      li Rewrote legacy systems using modern technologies and redesigned APIs
 
   section
     h2
