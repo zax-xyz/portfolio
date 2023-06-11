@@ -10,6 +10,7 @@ Section(title="Work Experience")
 
     ul
       li Tutor for #[strong COMP6080: Web Front-End Programming] - teaching classes, running help sessions, and marking
+      li Tutor for #[strong COMP2041: Software Construction: Techniques and Tools] — Shell/Bash, Regex, and Python
 
   section
     h2
