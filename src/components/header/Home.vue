@@ -12,7 +12,7 @@ header
     .flex
       transition(name="zoom" appear)
         .major
-          strong Frontend Software Engineer
+          strong Software Engineer
           br
           strong Computer Science
           |
@@ -137,7 +137,10 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.25) brightness(0.5) hue-rotate(180deg);
-  animation: fade-in 3s $easing-curve, hue-shift 10s 2s infinite, zoom 5s 3s infinite;
+  animation:
+    fade-in 3s $easing-curve,
+    hue-shift 10s 2s infinite,
+    zoom 5s 3s infinite;
 }
 
 @keyframes fade-in {
@@ -169,7 +172,9 @@ article {
 }
 
 .fade-down-enter-active {
-  transition: opacity 1s $easing-curve, transform 1s $easing-curve;
+  transition:
+    opacity 1s $easing-curve,
+    transform 1s $easing-curve;
   transition-delay: 1.25s;
 }
 
@@ -233,7 +238,9 @@ h1 {
 }
 
 .zoom-enter-active {
-  transition: opacity 2s $easing-curve, transform 2s $easing-curve;
+  transition:
+    opacity 2s $easing-curve,
+    transform 2s $easing-curve;
   transition-delay: 0.5s;
 }
 
@@ -243,7 +250,9 @@ h1 {
 }
 
 .slide-right-enter-active {
-  transition: opacity 2s $easing-curve, transform 2s $easing-curve;
+  transition:
+    opacity 2s $easing-curve,
+    transform 2s $easing-curve;
   transition-delay: 0.8s;
 }
 
@@ -253,7 +262,9 @@ h1 {
 }
 
 .fade-up-enter-active {
-  transition: opacity 1s $easing-curve, transform 1s $easing-curve;
+  transition:
+    opacity 1s $easing-curve,
+    transform 1s $easing-curve;
   transition-delay: 1.75s;
 
   &::v-deep line {
