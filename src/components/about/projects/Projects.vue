@@ -12,7 +12,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Abstracts away a large part of the #[Link(href="https://jsmartee.github.io/kh2fm-hints-demo/info.html#logic") logic] involved in hints for people to easily use them to their advantage, by making as many deducations from the current information as possible.
       p Supports mobile, allowing Twitch streamers to use their phone to control the on-stream tracker without unfocusing the game on their desktop.
 
-      GithubButton(href="https://github.com/zaxutic/kh-rando-tracker") Source Code
+      GithubButton(href="https://github.com/zax-xyz/kh-rando-tracker") Source Code
 
   section
     a.img(href="https://colours.zaxu.xyz" target="_blank" rel="noopener")
@@ -24,7 +24,7 @@ Section(title="Projects" :animateContent="false" ref="sections")
       p Uses #[strong Celery] and #[strong Redis] to asynchronously handle subroutines to connect to Twitch's IRC servers and run in the background to dynamically change the user's colour after every message.
       p Responsive design to handle both desktop and mobile experiences.
 
-      GithubButton(href="https://github.com/zaxutic/colours") Source Code
+      GithubButton(href="https://github.com/zax-xyz/colours") Source Code
 
   section
     .img.nohover

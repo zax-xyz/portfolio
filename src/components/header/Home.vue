@@ -50,7 +50,7 @@ export default {
       links: [
         {
           name: "GitHub",
-          ref: "https://github.com/zaxutic",
+          ref: "https://github.com/zax-xyz",
         },
         {
           name: "Resume/CV",
